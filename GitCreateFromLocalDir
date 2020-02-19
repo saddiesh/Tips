@@ -1,0 +1,27 @@
+Git Create repository from local directory:
+
+cd target_dir
+git init
+git add **/*.py   #add all file including those in subdirs
+git commit -m "notes"
+
+#In github.com, login, create repository, Ex: saddiesh/RealSense
+git remote add origin https://github.com/saddiesh/Realsense
+git push -u origin master
+
+
+
+#Exceptions:
+sadie@sadie-Precision-Tower-7910:~/Documents/realsense$ git remote add origin git@github.com:saddiesh/RealSense
+sadie@sadie-Precision-Tower-7910:~/Documents/realsense$ git push -u origin master
+[
+ssh: Could not resolve hostname github.com: Name or service not known
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]
+sadie@sadie-Precision-Tower-7910:~/Documents/realsense$ git remote add origin https://github.com/saddiesh/RealSense
+[fatal: remote origin already exists.]
+sadie@sadie-Precision-Tower-7910:~/Documents/realsense$ git remote set-url origin https://github.com/saddiesh/RealSense
+#Succeeded
