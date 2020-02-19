@@ -6,6 +6,8 @@ git add **/*.py   #add all file including those in subdirs
 git commit -m "notes"
 
 #In github.com, login, create repository, Ex: saddiesh/RealSense
+####IMPORTANT: DONT CREATE A README######
+
 git remote add origin https://github.com/saddiesh/Realsense
 git push -u origin master
 
